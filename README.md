@@ -19,6 +19,7 @@
     - [New Schema](#new-schema)
     - [DataFrame for Model Evaluation](#dataframe-for-model-evaluation)
       - [DataCleaner utility](#datacleaner-utility)
+      - [Final Dataset](#final-dataset)
   - [Techniques / Evaluation](#techniques--evaluation)
     - [Logistic Regression](#logistic-regression)
       - [Using Count Vectorization](#using-count-vectorization)
@@ -142,10 +143,31 @@ Language: C#, .NetCore
 </pre>
 
 Each note is a free text note and the quality of data varies from one note to other. Each note contains patient demographics, patient medications reconciliation, past medical history, family history, diagnosis, labs and other related details.
-A discharge note sample is available [here](\data\note_sample.txt) \
+A discharge note sample is available [here](data/note_sample.txt). \
 The DataCleaner utility is written to extract relevant text for this study. It parses the text and returns lines related to patient history and diagnoses. \
 These lines are stored by the utility in the database and converted to csv format to be used as data source for our data frame and modeling. 
 
+#### Final Dataset
+<pre>
+icd_diagnoses_codes.csv
+discharge_note_lines.csv
+</pre>
+Structure of icd_diagnoses_codes.csv
+
+| Column | Description |
+| ------ | ----------- |
+| icd_code | The icd code |
+| icd_version | The icd version, always 10 | 
+| long_title | The description of the code |
+
+Structure of discharge_note_lines.csv
+
+| Column | Description |
+| ------ | ----------- |
+| line_id| The line id |
+| text | The line of text from the discharge note | 
+| icd_code | The possible icd code to be predicted |
+| valid | True value indicates that this entry has been manually inspected and is correct |
 
 ## Techniques / Evaluation
 This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TV_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
