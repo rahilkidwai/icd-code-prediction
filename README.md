@@ -170,14 +170,44 @@ Structure of discharge_note_lines.csv
 | valid | True value indicates that this entry has been manually inspected and is correct |
 
 ## Techniques / Evaluation (WORK IN PROGRESS)
-This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TV_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
+This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TF_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
 Also would like to explore the natural language processing (NLP) technique (word embedding, Word2Vector) for processing data and a deep learning-based Convolutional Neural Network (CNN) model.
 To compare different techniques I plan to use the following metrics: Precision, Recall, and F-score.
 ### Logistic Regression
+<pre>
+Language: Python
+Packages: Pandas, nltk, sklearn, matplotlib, seaborn
+Notebook: [lr-comp-analysis](lr-comp-analysis.ipynb)
+</pre>
+
 #### Using Count Vectorization
+| Esitmator | Accuracy |
+| --------- | -------- |
+| One-vs-Rest Classifier | 0.71 |
+| Multnomial Classifier | 0.76 |
+| One-vs-One Classifier | 0.68 |
+
+**Best Performance**: Multinomial
+
 #### Using TFIDF
+| Esitmator | Accuracy |
+| --------- | -------- |
+| One-vs-Rest Classifier | 0.63 |
+| Multnomial Classifier | 0.63 |
+| One-vs-One Classifier | 0.55 |
+
+**Best Performance**: One-vs-Rest
+
 ### Naive Bayes
+| Esitmator | Accuracy |
+| --------- | -------- |
+| Count Vectorizer | 0.60 |
+| MultnomialNB | 0.55 |
+
+**Best Performance**: Count Vectorizer
+
 ### Support Vector Machines
+
 ## Conclusion
 
 ## References
