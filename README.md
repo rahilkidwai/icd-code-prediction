@@ -20,7 +20,7 @@
     - [DataFrame for Model Evaluation](#dataframe-for-model-evaluation)
       - [DataCleaner utility](#datacleaner-utility)
       - [Final Dataset](#final-dataset)
-  - [Techniques / Evaluation](#techniques--evaluation)
+  - [Techniques / Evaluation (WORK IN PROGRESS)](#techniques--evaluation-work-in-progress)
     - [Logistic Regression](#logistic-regression)
       - [Using Count Vectorization](#using-count-vectorization)
       - [Using TFIDF](#using-tfidf)
@@ -169,7 +169,7 @@ Structure of discharge_note_lines.csv
 | icd_code | The possible icd code to be predicted |
 | valid | True value indicates that this entry has been manually inspected and is correct |
 
-## Techniques / Evaluation
+## Techniques / Evaluation (WORK IN PROGRESS)
 This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TV_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
 Also would like to explore the natural language processing (NLP) technique (word embedding, Word2Vector) for processing data and a deep learning-based Convolutional Neural Network (CNN) model.
 To compare different techniques I plan to use the following metrics: Precision, Recall, and F-score.
