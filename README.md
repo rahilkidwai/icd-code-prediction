@@ -17,6 +17,7 @@
   - [Data Preprocessing](#data-preprocessing)
     - [Study Constraints](#study-constraints)
     - [New Schema](#new-schema)
+    - [DataFrame for Model Evaluation](#dataframe-for-model-evaluation)
   - [Techniques / Evaluation](#techniques--evaluation)
     - [Logistic Regression](#logistic-regression)
       - [Using Count Vectorization](#using-count-vectorization)
@@ -123,6 +124,18 @@ from mimiciv_note.discharge D
 inner join diagnosis C on D.subject_id=C.subject_id and D.hadm_id=C.hadm_id 
 order by D.subject_id, D.hadm_id;
 ```
+
+### DataFrame for Model Evaluation
+Stats on notes related to diabetes diagnosis:
+|   |   |
+|---|---|
+| Total notes count | 25,376 |
+| Minimum note length | 697 chars |
+| Maximum note length | 53,456 chars |
+
+After filtering data for diabetes diagnosis, we are left with ~25K discharge notes. The smallest note was around 700 characters and the largest note was over 53K characters. \
+Each note is a free text note and the quality of data varies from one note to other.
+
 
 ## Techniques / Evaluation
 This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TV_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
