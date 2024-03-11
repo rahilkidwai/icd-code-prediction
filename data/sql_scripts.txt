@@ -1,0 +1,90 @@
+select 
+	D.subject_id, D.hadm_id, D.seq_num, D.icd_code, C.long_title, N.note_id, N.note_type, N.note_seq, N.charttime, N.storetime, N.text
+from 
+	mimiciv_hosp.diagnoses_icd D 
+inner join 
+	mimiciv_hosp.d_icd_diagnoses C on D.icd_code = C.icd_code and D.icd_version = C.icd_version
+inner join 
+	mimiciv_note.discharge N on N.subject_id = D.subject_id and N.hadm_id = D.hadm_id
+where
+	D.icd_version = 10
+order by 
+	D.subject_id, D.hadm_id, N.note_seq, D.seq_num
+limit 10
+
+
+-- get all possible diabetes icd diagnoses
+select icd_code, icd_version, long_title 
+into capstone.d_icd_diagnoses
+from mimiciv_hosp.d_icd_diagnoses 
+where icd_version=10
+and long_title ilike '%diabetes%' 
+
+-- distinct diabetes code categories
+--E08,E09,E10,E11,E13,E23,N25,O24,P70,R73,Z13,Z83,Z86
+select distinct(substring(icd_code,1,3)) from capstone.d_icd_diagnoses order by 1
+
+-- admissions with diabetes diagnoses 
+select subject_id, hadm_id, seq_num, icd_code, icd_version 
+into capstone.diagnoses_icd
+from mimiciv_hosp.diagnoses_icd 
+where icd_version=10 
+and icd_code in (select icd_code from capstone.d_icd_diagnoses)
+order by subject_id, hadm_id, seq_num
+
+-- admissions with diagnoses having exactly 1 diabetes icd code 
+with diagnosis as (
+	select subject_id, hadm_id from capstone.diagnoses_icd group by subject_id, hadm_id having count(*) = 1
+)
+select D.subject_id, D.hadm_id, D.note_type, D.note_seq, D.text, null as icd_code
+into capstone.discharge_note
+from mimiciv_note.discharge D
+inner join diagnosis C on D.subject_id=C.subject_id and D.hadm_id=C.hadm_id 
+order by D.subject_id, D.hadm_id;
+
+-- update diagnoses table and the 'single related' icd code for each record
+update capstone.discharge_note
+set icd_code = capstone.diagnoses_icd.icd_code
+from capstone.diagnoses_icd
+where capstone.discharge_note.subject_id = capstone.diagnoses_icd.subject_id
+and capstone.discharge_note.hadm_id = capstone.diagnoses_icd.hadm_id;
+
+-- table to store lines and related code if any
+create table capstone.discharge_note_line(
+	line_id serial not null primary key,
+	subject_id int not null,
+	hadm_id int not null,
+	category text not null,
+	text text not null,
+	icd_code text null
+);
+create index idx_discharge_note_line_subject_hadm on capstone.discharge_note_line(subject_id, hadm_id);
+
+-- table to store line, icd code with description and valid indicator to indicate if this line has valid data to map to given icd
+create table capstone.line_icd(
+	line_id serial not null primary key,
+	text text not null,
+	icd_code text not null,
+	icd_text text not null, 
+	valid bool not null default false
+);
+create index idx_line_icd_icd_code on capstone.line_icd(icd_code);
+create index idx_line_icd_valid on capstone.line_icd(valid);
+
+insert into capstone.line_icd (text, icd_code, icd_text)
+select L.text, L.icd_code, D.long_title
+from capstone.discharge_note_line L 
+inner join capstone.d_icd_diagnoses D on L.icd_code=D.icd_code;
+
+select * from capstone.diagnoses_icd limit 10;
+select * from capstone.discharge_note limit 10;
+select * from capstone.discharge_note_line limit 10;
+
+drop table capstone.discharge_note_lines;
+
+select line_id, text, icd_code, valid::text as valid
+into capstone.discharge_note_lines
+from capstone.line_icd
+where length(text) < 200 or valid = 'true';
+
+select count(*) from capstone.discharge_note_lines where valid='true';

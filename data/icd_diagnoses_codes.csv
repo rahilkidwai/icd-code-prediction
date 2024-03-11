@@ -1,0 +1,643 @@
+icd_code|icd_version|long_title
+E08    |10|Diabetes mellitus due to underlying condition
+E080   |10|Diabetes mellitus due to underlying condition with hyperosmolarity
+E0800  |10|Diabetes mellitus due to underlying condition with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)
+E0801  |10|Diabetes mellitus due to underlying condition with hyperosmolarity with coma
+E081   |10|Diabetes mellitus due to underlying condition with ketoacidosis
+E0810  |10|Diabetes mellitus due to underlying condition with ketoacidosis without coma
+E0811  |10|Diabetes mellitus due to underlying condition with ketoacidosis with coma
+E082   |10|Diabetes mellitus due to underlying condition with kidney complications
+E0821  |10|Diabetes mellitus due to underlying condition with diabetic nephropathy
+E0822  |10|Diabetes mellitus due to underlying condition with diabetic chronic kidney disease
+E0829  |10|Diabetes mellitus due to underlying condition with other diabetic kidney complication
+E083   |10|Diabetes mellitus due to underlying condition with ophthalmic complications
+E0831  |10|Diabetes mellitus due to underlying condition with unspecified diabetic retinopathy
+E08311 |10|Diabetes mellitus due to underlying condition with unspecified diabetic retinopathy with macular edema
+E08319 |10|Diabetes mellitus due to underlying condition with unspecified diabetic retinopathy without macular edema
+E0832  |10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy
+E08321 |10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy with macular edema
+E083211|10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy with macular edema, right eye
+E083212|10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy with macular edema, left eye
+E083213|10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy with macular edema, bilateral
+E083219|10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E08329 |10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy without macular edema
+E083291|10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy without macular edema, right eye
+E083292|10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy without macular edema, left eye
+E083293|10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy without macular edema, bilateral
+E083299|10|Diabetes mellitus due to underlying condition with mild nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E0833  |10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy
+E08331 |10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy with macular edema
+E083311|10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy with macular edema, right eye
+E083312|10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy with macular edema, left eye
+E083313|10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy with macular edema, bilateral
+E083319|10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E08339 |10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy without macular edema
+E083391|10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy without macular edema, right eye
+E083392|10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy without macular edema, left eye
+E083393|10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy without macular edema, bilateral
+E083399|10|Diabetes mellitus due to underlying condition with moderate nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E0834  |10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy
+E08341 |10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy with macular edema
+E083411|10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy with macular edema, right eye
+E083412|10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy with macular edema, left eye
+E083413|10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy with macular edema, bilateral
+E083419|10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E08349 |10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy without macular edema
+E083491|10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy without macular edema, right eye
+E083492|10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy without macular edema, left eye
+E083493|10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy without macular edema, bilateral
+E083499|10|Diabetes mellitus due to underlying condition with severe nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E0835  |10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy
+E08351 |10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with macular edema
+E083511|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with macular edema, right eye
+E083512|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with macular edema, left eye
+E083513|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with macular edema, bilateral
+E083519|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with macular edema, unspecified eye
+E08352 |10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment involving the macula
+E083521|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment involving the macula, right eye
+E083522|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment involving the macula, left eye
+E083523|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral
+E083529|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment involving the macula, unspecified eye
+E08353 |10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment not involving the macula
+E083531|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye
+E083532|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye
+E083533|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral
+E083539|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, unspecified eye
+E08354 |10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment
+E083541|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye
+E083542|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye
+E083543|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral
+E083549|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, unspecified eye
+E08355 |10|Diabetes mellitus due to underlying condition with stable proliferative diabetic retinopathy
+E083551|10|Diabetes mellitus due to underlying condition with stable proliferative diabetic retinopathy, right eye
+E083552|10|Diabetes mellitus due to underlying condition with stable proliferative diabetic retinopathy, left eye
+E083553|10|Diabetes mellitus due to underlying condition with stable proliferative diabetic retinopathy, bilateral
+E083559|10|Diabetes mellitus due to underlying condition with stable proliferative diabetic retinopathy, unspecified eye
+E08359 |10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy without macular edema
+E083591|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy without macular edema, right eye
+E083592|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy without macular edema, left eye
+E083593|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy without macular edema, bilateral
+E083599|10|Diabetes mellitus due to underlying condition with proliferative diabetic retinopathy without macular edema, unspecified eye
+E0836  |10|Diabetes mellitus due to underlying condition with diabetic cataract
+E0837  |10|Diabetes mellitus due to underlying condition with diabetic macular edema, resolved following treatment
+E0837X1|10|Diabetes mellitus due to underlying condition with diabetic macular edema, resolved following treatment, right eye
+E0837X2|10|Diabetes mellitus due to underlying condition with diabetic macular edema, resolved following treatment, left eye
+E0837X3|10|Diabetes mellitus due to underlying condition with diabetic macular edema, resolved following treatment, bilateral
+E0837X9|10|Diabetes mellitus due to underlying condition with diabetic macular edema, resolved following treatment, unspecified eye
+E0839  |10|Diabetes mellitus due to underlying condition with other diabetic ophthalmic complication
+E084   |10|Diabetes mellitus due to underlying condition with neurological complications
+E0840  |10|Diabetes mellitus due to underlying condition with diabetic neuropathy, unspecified
+E0841  |10|Diabetes mellitus due to underlying condition with diabetic mononeuropathy
+E0842  |10|Diabetes mellitus due to underlying condition with diabetic polyneuropathy
+E0843  |10|Diabetes mellitus due to underlying condition with diabetic autonomic (poly)neuropathy
+E0844  |10|Diabetes mellitus due to underlying condition with diabetic amyotrophy
+E0849  |10|Diabetes mellitus due to underlying condition with other diabetic neurological complication
+E085   |10|Diabetes mellitus due to underlying condition with circulatory complications
+E0851  |10|Diabetes mellitus due to underlying condition with diabetic peripheral angiopathy without gangrene
+E0852  |10|Diabetes mellitus due to underlying condition with diabetic peripheral angiopathy with gangrene
+E0859  |10|Diabetes mellitus due to underlying condition with other circulatory complications
+E086   |10|Diabetes mellitus due to underlying condition with other specified complications
+E0861  |10|Diabetes mellitus due to underlying condition with diabetic arthropathy
+E08610 |10|Diabetes mellitus due to underlying condition with diabetic neuropathic arthropathy
+E08618 |10|Diabetes mellitus due to underlying condition with other diabetic arthropathy
+E0862  |10|Diabetes mellitus due to underlying condition with skin complications
+E08620 |10|Diabetes mellitus due to underlying condition with diabetic dermatitis
+E08621 |10|Diabetes mellitus due to underlying condition with foot ulcer
+E08622 |10|Diabetes mellitus due to underlying condition with other skin ulcer
+E08628 |10|Diabetes mellitus due to underlying condition with other skin complications
+E0863  |10|Diabetes mellitus due to underlying condition with oral complications
+E08630 |10|Diabetes mellitus due to underlying condition with periodontal disease
+E08638 |10|Diabetes mellitus due to underlying condition with other oral complications
+E0864  |10|Diabetes mellitus due to underlying condition with hypoglycemia
+E08641 |10|Diabetes mellitus due to underlying condition with hypoglycemia with coma
+E08649 |10|Diabetes mellitus due to underlying condition with hypoglycemia without coma
+E0865  |10|Diabetes mellitus due to underlying condition with hyperglycemia
+E0869  |10|Diabetes mellitus due to underlying condition with other specified complication
+E088   |10|Diabetes mellitus due to underlying condition with unspecified complications
+E089   |10|Diabetes mellitus due to underlying condition without complications
+E09    |10|Drug or chemical induced diabetes mellitus
+E090   |10|Drug or chemical induced diabetes mellitus with hyperosmolarity
+E0900  |10|Drug or chemical induced diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)
+E0901  |10|Drug or chemical induced diabetes mellitus with hyperosmolarity with coma
+E091   |10|Drug or chemical induced diabetes mellitus with ketoacidosis
+E0910  |10|Drug or chemical induced diabetes mellitus with ketoacidosis without coma
+E0911  |10|Drug or chemical induced diabetes mellitus with ketoacidosis with coma
+E092   |10|Drug or chemical induced diabetes mellitus with kidney complications
+E0921  |10|Drug or chemical induced diabetes mellitus with diabetic nephropathy
+E0922  |10|Drug or chemical induced diabetes mellitus with diabetic chronic kidney disease
+E0929  |10|Drug or chemical induced diabetes mellitus with other diabetic kidney complication
+E093   |10|Drug or chemical induced diabetes mellitus with ophthalmic complications
+E0931  |10|Drug or chemical induced diabetes mellitus with unspecified diabetic retinopathy
+E09311 |10|Drug or chemical induced diabetes mellitus with unspecified diabetic retinopathy with macular edema
+E09319 |10|Drug or chemical induced diabetes mellitus with unspecified diabetic retinopathy without macular edema
+E0932  |10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy
+E09321 |10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema
+E093211|10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, right eye
+E093212|10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, left eye
+E093213|10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, bilateral
+E093219|10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E09329 |10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema
+E093291|10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, right eye
+E093292|10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, left eye
+E093293|10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral
+E093299|10|Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E0933  |10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy
+E09331 |10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema
+E093311|10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, right eye
+E093312|10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, left eye
+E093313|10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, bilateral
+E093319|10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E09339 |10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema
+E093391|10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, right eye
+E093392|10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, left eye
+E093393|10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, bilateral
+E093399|10|Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E0934  |10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy
+E09341 |10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema
+E093411|10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, right eye
+E093412|10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, left eye
+E093413|10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, bilateral
+E093419|10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E09349 |10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema
+E093491|10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, right eye
+E093492|10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, left eye
+E093493|10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, bilateral
+E093499|10|Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E0935  |10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy
+E09351 |10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with macular edema
+E093511|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with macular edema, right eye
+E093512|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with macular edema, left eye
+E093513|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with macular edema, bilateral
+E093519|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with macular edema, unspecified eye
+E09352 |10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula
+E093521|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, right eye
+E093522|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, left eye
+E093523|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral
+E093529|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, unspecified eye
+E09353 |10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula
+E093531|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye
+E093532|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye
+E093533|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral
+E093539|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, unspecified eye
+E09354 |10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment
+E093541|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye
+E093542|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye
+E093543|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral
+E093549|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, unspecified eye
+E09355 |10|Drug or chemical induced diabetes mellitus with stable proliferative diabetic retinopathy
+E093551|10|Drug or chemical induced diabetes mellitus with stable proliferative diabetic retinopathy, right eye
+E093552|10|Drug or chemical induced diabetes mellitus with stable proliferative diabetic retinopathy, left eye
+E093553|10|Drug or chemical induced diabetes mellitus with stable proliferative diabetic retinopathy, bilateral
+E093559|10|Drug or chemical induced diabetes mellitus with stable proliferative diabetic retinopathy, unspecified eye
+E09359 |10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy without macular edema
+E093591|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy without macular edema, right eye
+E093592|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy without macular edema, left eye
+E093593|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy without macular edema, bilateral
+E093599|10|Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy without macular edema, unspecified eye
+E0936  |10|Drug or chemical induced diabetes mellitus with diabetic cataract
+E0937  |10|Drug or chemical induced diabetes mellitus with diabetic macular edema, resolved following treatment
+E0937X1|10|Drug or chemical induced diabetes mellitus with diabetic macular edema, resolved following treatment, right eye
+E0937X2|10|Drug or chemical induced diabetes mellitus with diabetic macular edema, resolved following treatment, left eye
+E0937X3|10|Drug or chemical induced diabetes mellitus with diabetic macular edema, resolved following treatment, bilateral
+E0937X9|10|Drug or chemical induced diabetes mellitus with diabetic macular edema, resolved following treatment, unspecified eye
+E0939  |10|Drug or chemical induced diabetes mellitus with other diabetic ophthalmic complication
+E094   |10|Drug or chemical induced diabetes mellitus with neurological complications
+E0940  |10|Drug or chemical induced diabetes mellitus with neurological complications with diabetic neuropathy, unspecified
+E0941  |10|Drug or chemical induced diabetes mellitus with neurological complications with diabetic mononeuropathy
+E0942  |10|Drug or chemical induced diabetes mellitus with neurological complications with diabetic polyneuropathy
+E0943  |10|Drug or chemical induced diabetes mellitus with neurological complications with diabetic autonomic (poly)neuropathy
+E0944  |10|Drug or chemical induced diabetes mellitus with neurological complications with diabetic amyotrophy
+E0949  |10|Drug or chemical induced diabetes mellitus with neurological complications with other diabetic neurological complication
+E095   |10|Drug or chemical induced diabetes mellitus with circulatory complications
+E0951  |10|Drug or chemical induced diabetes mellitus with diabetic peripheral angiopathy without gangrene
+E0952  |10|Drug or chemical induced diabetes mellitus with diabetic peripheral angiopathy with gangrene
+E0959  |10|Drug or chemical induced diabetes mellitus with other circulatory complications
+E096   |10|Drug or chemical induced diabetes mellitus with other specified complications
+E0961  |10|Drug or chemical induced diabetes mellitus with diabetic arthropathy
+E09610 |10|Drug or chemical induced diabetes mellitus with diabetic neuropathic arthropathy
+E09618 |10|Drug or chemical induced diabetes mellitus with other diabetic arthropathy
+E0962  |10|Drug or chemical induced diabetes mellitus with skin complications
+E09620 |10|Drug or chemical induced diabetes mellitus with diabetic dermatitis
+E09621 |10|Drug or chemical induced diabetes mellitus with foot ulcer
+E09622 |10|Drug or chemical induced diabetes mellitus with other skin ulcer
+E09628 |10|Drug or chemical induced diabetes mellitus with other skin complications
+E0963  |10|Drug or chemical induced diabetes mellitus with oral complications
+E09630 |10|Drug or chemical induced diabetes mellitus with periodontal disease
+E09638 |10|Drug or chemical induced diabetes mellitus with other oral complications
+E0964  |10|Drug or chemical induced diabetes mellitus with hypoglycemia
+E09641 |10|Drug or chemical induced diabetes mellitus with hypoglycemia with coma
+E09649 |10|Drug or chemical induced diabetes mellitus with hypoglycemia without coma
+E0965  |10|Drug or chemical induced diabetes mellitus with hyperglycemia
+E0969  |10|Drug or chemical induced diabetes mellitus with other specified complication
+E098   |10|Drug or chemical induced diabetes mellitus with unspecified complications
+E099   |10|Drug or chemical induced diabetes mellitus without complications
+E10    |10|Type 1 diabetes mellitus
+E101   |10|Type 1 diabetes mellitus with ketoacidosis
+E1010  |10|Type 1 diabetes mellitus with ketoacidosis without coma
+E1011  |10|Type 1 diabetes mellitus with ketoacidosis with coma
+E102   |10|Type 1 diabetes mellitus with kidney complications
+E1021  |10|Type 1 diabetes mellitus with diabetic nephropathy
+E1022  |10|Type 1 diabetes mellitus with diabetic chronic kidney disease
+E1029  |10|Type 1 diabetes mellitus with other diabetic kidney complication
+E103   |10|Type 1 diabetes mellitus with ophthalmic complications
+E1031  |10|Type 1 diabetes mellitus with unspecified diabetic retinopathy
+E10311 |10|Type 1 diabetes mellitus with unspecified diabetic retinopathy with macular edema
+E10319 |10|Type 1 diabetes mellitus with unspecified diabetic retinopathy without macular edema
+E1032  |10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy
+E10321 |10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema
+E103211|10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, right eye
+E103212|10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, left eye
+E103213|10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, bilateral
+E103219|10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E10329 |10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema
+E103291|10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, right eye
+E103292|10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, left eye
+E103293|10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral
+E103299|10|Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E1033  |10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy
+E10331 |10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema
+E103311|10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, right eye
+E103312|10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, left eye
+E103313|10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, bilateral
+E103319|10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E10339 |10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema
+E103391|10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, right eye
+E103392|10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, left eye
+E103393|10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, bilateral
+E103399|10|Type 1 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E1034  |10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy
+E10341 |10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema
+E103411|10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, right eye
+E103412|10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, left eye
+E103413|10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, bilateral
+E103419|10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E10349 |10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema
+E103491|10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, right eye
+E103492|10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, left eye
+E103493|10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, bilateral
+E103499|10|Type 1 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E1035  |10|Type 1 diabetes mellitus with proliferative diabetic retinopathy
+E10351 |10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with macular edema
+E103511|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with macular edema, right eye
+E103512|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with macular edema, left eye
+E103513|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with macular edema, bilateral
+E103519|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with macular edema, unspecified eye
+E10352 |10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula
+E103521|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, right eye
+E103522|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, left eye
+E103523|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral
+E103529|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, unspecified eye
+E10353 |10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula
+E103531|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye
+E103532|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye
+E103533|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral
+E103539|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, unspecified eye
+E10354 |10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment
+E103541|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye
+E103542|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye
+E103543|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral
+E103549|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, unspecified eye
+E10355 |10|Type 1 diabetes mellitus with stable proliferative diabetic retinopathy
+E103551|10|Type 1 diabetes mellitus with stable proliferative diabetic retinopathy, right eye
+E103552|10|Type 1 diabetes mellitus with stable proliferative diabetic retinopathy, left eye
+E103553|10|Type 1 diabetes mellitus with stable proliferative diabetic retinopathy, bilateral
+E103559|10|Type 1 diabetes mellitus with stable proliferative diabetic retinopathy, unspecified eye
+E10359 |10|Type 1 diabetes mellitus with proliferative diabetic retinopathy without macular edema
+E103591|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy without macular edema, right eye
+E103592|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy without macular edema, left eye
+E103593|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy without macular edema, bilateral
+E103599|10|Type 1 diabetes mellitus with proliferative diabetic retinopathy without macular edema, unspecified eye
+E1036  |10|Type 1 diabetes mellitus with diabetic cataract
+E1037  |10|Type 1 diabetes mellitus with diabetic macular edema, resolved following treatment
+E1037X1|10|Type 1 diabetes mellitus with diabetic macular edema, resolved following treatment, right eye
+E1037X2|10|Type 1 diabetes mellitus with diabetic macular edema, resolved following treatment, left eye
+E1037X3|10|Type 1 diabetes mellitus with diabetic macular edema, resolved following treatment, bilateral
+E1037X9|10|Type 1 diabetes mellitus with diabetic macular edema, resolved following treatment, unspecified eye
+E1039  |10|Type 1 diabetes mellitus with other diabetic ophthalmic complication
+E104   |10|Type 1 diabetes mellitus with neurological complications
+E1040  |10|Type 1 diabetes mellitus with diabetic neuropathy, unspecified
+E1041  |10|Type 1 diabetes mellitus with diabetic mononeuropathy
+E1042  |10|Type 1 diabetes mellitus with diabetic polyneuropathy
+E1043  |10|Type 1 diabetes mellitus with diabetic autonomic (poly)neuropathy
+E1044  |10|Type 1 diabetes mellitus with diabetic amyotrophy
+E1049  |10|Type 1 diabetes mellitus with other diabetic neurological complication
+E105   |10|Type 1 diabetes mellitus with circulatory complications
+E1051  |10|Type 1 diabetes mellitus with diabetic peripheral angiopathy without gangrene
+E1052  |10|Type 1 diabetes mellitus with diabetic peripheral angiopathy with gangrene
+E1059  |10|Type 1 diabetes mellitus with other circulatory complications
+E106   |10|Type 1 diabetes mellitus with other specified complications
+E1061  |10|Type 1 diabetes mellitus with diabetic arthropathy
+E10610 |10|Type 1 diabetes mellitus with diabetic neuropathic arthropathy
+E10618 |10|Type 1 diabetes mellitus with other diabetic arthropathy
+E1062  |10|Type 1 diabetes mellitus with skin complications
+E10620 |10|Type 1 diabetes mellitus with diabetic dermatitis
+E10621 |10|Type 1 diabetes mellitus with foot ulcer
+E10622 |10|Type 1 diabetes mellitus with other skin ulcer
+E10628 |10|Type 1 diabetes mellitus with other skin complications
+E1063  |10|Type 1 diabetes mellitus with oral complications
+E10630 |10|Type 1 diabetes mellitus with periodontal disease
+E10638 |10|Type 1 diabetes mellitus with other oral complications
+E1064  |10|Type 1 diabetes mellitus with hypoglycemia
+E10641 |10|Type 1 diabetes mellitus with hypoglycemia with coma
+E10649 |10|Type 1 diabetes mellitus with hypoglycemia without coma
+E1065  |10|Type 1 diabetes mellitus with hyperglycemia
+E1069  |10|Type 1 diabetes mellitus with other specified complication
+E108   |10|Type 1 diabetes mellitus with unspecified complications
+E109   |10|Type 1 diabetes mellitus without complications
+E11    |10|Type 2 diabetes mellitus
+E110   |10|Type 2 diabetes mellitus with hyperosmolarity
+E1100  |10|Type 2 diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)
+E1101  |10|Type 2 diabetes mellitus with hyperosmolarity with coma
+E111   |10|Type 2 diabetes mellitus with ketoacidosis
+E1110  |10|Type 2 diabetes mellitus with ketoacidosis without coma
+E1111  |10|Type 2 diabetes mellitus with ketoacidosis with coma
+E112   |10|Type 2 diabetes mellitus with kidney complications
+E1121  |10|Type 2 diabetes mellitus with diabetic nephropathy
+E1122  |10|Type 2 diabetes mellitus with diabetic chronic kidney disease
+E1129  |10|Type 2 diabetes mellitus with other diabetic kidney complication
+E113   |10|Type 2 diabetes mellitus with ophthalmic complications
+E1131  |10|Type 2 diabetes mellitus with unspecified diabetic retinopathy
+E11311 |10|Type 2 diabetes mellitus with unspecified diabetic retinopathy with macular edema
+E11319 |10|Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema
+E1132  |10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy
+E11321 |10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema
+E113211|10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, right eye
+E113212|10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, left eye
+E113213|10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, bilateral
+E113219|10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E11329 |10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema
+E113291|10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, right eye
+E113292|10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, left eye
+E113293|10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral
+E113299|10|Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E1133  |10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy
+E11331 |10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema
+E113311|10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, right eye
+E113312|10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, left eye
+E113313|10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, bilateral
+E113319|10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E11339 |10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema
+E113391|10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, right eye
+E113392|10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, left eye
+E113393|10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, bilateral
+E113399|10|Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E1134  |10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy
+E11341 |10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema
+E113411|10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, right eye
+E113412|10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, left eye
+E113413|10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, bilateral
+E113419|10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E11349 |10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema
+E113491|10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, right eye
+E113492|10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, left eye
+E113493|10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, bilateral
+E113499|10|Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E1135  |10|Type 2 diabetes mellitus with proliferative diabetic retinopathy
+E11351 |10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema
+E113511|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema, right eye
+E113512|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema, left eye
+E113513|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema, bilateral
+E113519|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with macular edema, unspecified eye
+E11352 |10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula
+E113521|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, right eye
+E113522|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, left eye
+E113523|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral
+E113529|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, unspecified eye
+E11353 |10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula
+E113531|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye
+E113532|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye
+E113533|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral
+E113539|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, unspecified eye
+E11354 |10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment
+E113541|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye
+E113542|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye
+E113543|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral
+E113549|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, unspecified eye
+E11355 |10|Type 2 diabetes mellitus with stable proliferative diabetic retinopathy
+E113551|10|Type 2 diabetes mellitus with stable proliferative diabetic retinopathy, right eye
+E113552|10|Type 2 diabetes mellitus with stable proliferative diabetic retinopathy, left eye
+E113553|10|Type 2 diabetes mellitus with stable proliferative diabetic retinopathy, bilateral
+E113559|10|Type 2 diabetes mellitus with stable proliferative diabetic retinopathy, unspecified eye
+E11359 |10|Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema
+E113591|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, right eye
+E113592|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, left eye
+E113593|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, bilateral
+E113599|10|Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, unspecified eye
+E1136  |10|Type 2 diabetes mellitus with diabetic cataract
+E1137  |10|Type 2 diabetes mellitus with diabetic macular edema, resolved following treatment
+E1137X1|10|Type 2 diabetes mellitus with diabetic macular edema, resolved following treatment, right eye
+E1137X2|10|Type 2 diabetes mellitus with diabetic macular edema, resolved following treatment, left eye
+E1137X3|10|Type 2 diabetes mellitus with diabetic macular edema, resolved following treatment, bilateral
+E1137X9|10|Type 2 diabetes mellitus with diabetic macular edema, resolved following treatment, unspecified eye
+E1139  |10|Type 2 diabetes mellitus with other diabetic ophthalmic complication
+E114   |10|Type 2 diabetes mellitus with neurological complications
+E1140  |10|Type 2 diabetes mellitus with diabetic neuropathy, unspecified
+E1141  |10|Type 2 diabetes mellitus with diabetic mononeuropathy
+E1142  |10|Type 2 diabetes mellitus with diabetic polyneuropathy
+E1143  |10|Type 2 diabetes mellitus with diabetic autonomic (poly)neuropathy
+E1144  |10|Type 2 diabetes mellitus with diabetic amyotrophy
+E1149  |10|Type 2 diabetes mellitus with other diabetic neurological complication
+E115   |10|Type 2 diabetes mellitus with circulatory complications
+E1151  |10|Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene
+E1152  |10|Type 2 diabetes mellitus with diabetic peripheral angiopathy with gangrene
+E1159  |10|Type 2 diabetes mellitus with other circulatory complications
+E116   |10|Type 2 diabetes mellitus with other specified complications
+E1161  |10|Type 2 diabetes mellitus with diabetic arthropathy
+E11610 |10|Type 2 diabetes mellitus with diabetic neuropathic arthropathy
+E11618 |10|Type 2 diabetes mellitus with other diabetic arthropathy
+E1162  |10|Type 2 diabetes mellitus with skin complications
+E11620 |10|Type 2 diabetes mellitus with diabetic dermatitis
+E11621 |10|Type 2 diabetes mellitus with foot ulcer
+E11622 |10|Type 2 diabetes mellitus with other skin ulcer
+E11628 |10|Type 2 diabetes mellitus with other skin complications
+E1163  |10|Type 2 diabetes mellitus with oral complications
+E11630 |10|Type 2 diabetes mellitus with periodontal disease
+E11638 |10|Type 2 diabetes mellitus with other oral complications
+E1164  |10|Type 2 diabetes mellitus with hypoglycemia
+E11641 |10|Type 2 diabetes mellitus with hypoglycemia with coma
+E11649 |10|Type 2 diabetes mellitus with hypoglycemia without coma
+E1165  |10|Type 2 diabetes mellitus with hyperglycemia
+E1169  |10|Type 2 diabetes mellitus with other specified complication
+E118   |10|Type 2 diabetes mellitus with unspecified complications
+E119   |10|Type 2 diabetes mellitus without complications
+E13    |10|Other specified diabetes mellitus
+E130   |10|Other specified diabetes mellitus with hyperosmolarity
+E1300  |10|Other specified diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)
+E1301  |10|Other specified diabetes mellitus with hyperosmolarity with coma
+E131   |10|Other specified diabetes mellitus with ketoacidosis
+E1310  |10|Other specified diabetes mellitus with ketoacidosis without coma
+E1311  |10|Other specified diabetes mellitus with ketoacidosis with coma
+E132   |10|Other specified diabetes mellitus with kidney complications
+E1321  |10|Other specified diabetes mellitus with diabetic nephropathy
+E1322  |10|Other specified diabetes mellitus with diabetic chronic kidney disease
+E1329  |10|Other specified diabetes mellitus with other diabetic kidney complication
+E133   |10|Other specified diabetes mellitus with ophthalmic complications
+E1331  |10|Other specified diabetes mellitus with unspecified diabetic retinopathy
+E13311 |10|Other specified diabetes mellitus with unspecified diabetic retinopathy with macular edema
+E13319 |10|Other specified diabetes mellitus with unspecified diabetic retinopathy without macular edema
+E1332  |10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy
+E13321 |10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema
+E133211|10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, right eye
+E133212|10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, left eye
+E133213|10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, bilateral
+E133219|10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E13329 |10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema
+E133291|10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, right eye
+E133292|10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, left eye
+E133293|10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral
+E133299|10|Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E1333  |10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy
+E13331 |10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema
+E133311|10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, right eye
+E133312|10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, left eye
+E133313|10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, bilateral
+E133319|10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E13339 |10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema
+E133391|10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, right eye
+E133392|10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, left eye
+E133393|10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, bilateral
+E133399|10|Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E1334  |10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy
+E13341 |10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema
+E133411|10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, right eye
+E133412|10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, left eye
+E133413|10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, bilateral
+E133419|10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy with macular edema, unspecified eye
+E13349 |10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema
+E133491|10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, right eye
+E133492|10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, left eye
+E133493|10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, bilateral
+E133499|10|Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy without macular edema, unspecified eye
+E1335  |10|Other specified diabetes mellitus with proliferative diabetic retinopathy
+E13351 |10|Other specified diabetes mellitus with proliferative diabetic retinopathy with macular edema
+E133511|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with macular edema, right eye
+E133512|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with macular edema, left eye
+E133513|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with macular edema, bilateral
+E133519|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with macular edema, unspecified eye
+E13352 |10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula
+E133521|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, right eye
+E133522|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, left eye
+E133523|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, bilateral
+E133529|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, unspecified eye
+E13353 |10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula
+E133531|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, right eye
+E133532|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, left eye
+E133533|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, bilateral
+E133539|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula, unspecified eye
+E13354 |10|Other specified diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment
+E133541|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, right eye
+E133542|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, left eye
+E133543|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, bilateral
+E133549|10|Other specified diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment, unspecified eye
+E13355 |10|Other specified diabetes mellitus with stable proliferative diabetic retinopathy
+E133551|10|Other specified diabetes mellitus with stable proliferative diabetic retinopathy, right eye
+E133552|10|Other specified diabetes mellitus with stable proliferative diabetic retinopathy, left eye
+E133553|10|Other specified diabetes mellitus with stable proliferative diabetic retinopathy, bilateral
+E133559|10|Other specified diabetes mellitus with stable proliferative diabetic retinopathy, unspecified eye
+E13359 |10|Other specified diabetes mellitus with proliferative diabetic retinopathy without macular edema
+E133591|10|Other specified diabetes mellitus with proliferative diabetic retinopathy without macular edema, right eye
+E133592|10|Other specified diabetes mellitus with proliferative diabetic retinopathy without macular edema, left eye
+E133593|10|Other specified diabetes mellitus with proliferative diabetic retinopathy without macular edema, bilateral
+E133599|10|Other specified diabetes mellitus with proliferative diabetic retinopathy without macular edema, unspecified eye
+E1336  |10|Other specified diabetes mellitus with diabetic cataract
+E1337  |10|Other specified diabetes mellitus with diabetic macular edema, resolved following treatment
+E1337X1|10|Other specified diabetes mellitus with diabetic macular edema, resolved following treatment, right eye
+E1337X2|10|Other specified diabetes mellitus with diabetic macular edema, resolved following treatment, left eye
+E1337X3|10|Other specified diabetes mellitus with diabetic macular edema, resolved following treatment, bilateral
+E1337X9|10|Other specified diabetes mellitus with diabetic macular edema, resolved following treatment, unspecified eye
+E1339  |10|Other specified diabetes mellitus with other diabetic ophthalmic complication
+E134   |10|Other specified diabetes mellitus with neurological complications
+E1340  |10|Other specified diabetes mellitus with diabetic neuropathy, unspecified
+E1341  |10|Other specified diabetes mellitus with diabetic mononeuropathy
+E1342  |10|Other specified diabetes mellitus with diabetic polyneuropathy
+E1343  |10|Other specified diabetes mellitus with diabetic autonomic (poly)neuropathy
+E1344  |10|Other specified diabetes mellitus with diabetic amyotrophy
+E1349  |10|Other specified diabetes mellitus with other diabetic neurological complication
+E135   |10|Other specified diabetes mellitus with circulatory complications
+E1351  |10|Other specified diabetes mellitus with diabetic peripheral angiopathy without gangrene
+E1352  |10|Other specified diabetes mellitus with diabetic peripheral angiopathy with gangrene
+E1359  |10|Other specified diabetes mellitus with other circulatory complications
+E136   |10|Other specified diabetes mellitus with other specified complications
+E1361  |10|Other specified diabetes mellitus with diabetic arthropathy
+E13610 |10|Other specified diabetes mellitus with diabetic neuropathic arthropathy
+E13618 |10|Other specified diabetes mellitus with other diabetic arthropathy
+E1362  |10|Other specified diabetes mellitus with skin complications
+E13620 |10|Other specified diabetes mellitus with diabetic dermatitis
+E13621 |10|Other specified diabetes mellitus with foot ulcer
+E13622 |10|Other specified diabetes mellitus with other skin ulcer
+E13628 |10|Other specified diabetes mellitus with other skin complications
+E1363  |10|Other specified diabetes mellitus with oral complications
+E13630 |10|Other specified diabetes mellitus with periodontal disease
+E13638 |10|Other specified diabetes mellitus with other oral complications
+E1364  |10|Other specified diabetes mellitus with hypoglycemia
+E13641 |10|Other specified diabetes mellitus with hypoglycemia with coma
+E13649 |10|Other specified diabetes mellitus with hypoglycemia without coma
+E1365  |10|Other specified diabetes mellitus with hyperglycemia
+E1369  |10|Other specified diabetes mellitus with other specified complication
+E138   |10|Other specified diabetes mellitus with unspecified complications
+E139   |10|Other specified diabetes mellitus without complications
+E232   |10|Diabetes insipidus
+N251   |10|Nephrogenic diabetes insipidus
+O24    |10|Diabetes mellitus in pregnancy, childbirth, and the puerperium
+O240   |10|Pre-existing type 1 diabetes mellitus, in pregnancy, childbirth and the puerperium
+O2401  |10|Pre-existing type 1 diabetes mellitus, in pregnancy
+O24011 |10|Pre-existing type 1 diabetes mellitus, in pregnancy, first trimester
+O24012 |10|Pre-existing type 1 diabetes mellitus, in pregnancy, second trimester
+O24013 |10|Pre-existing type 1 diabetes mellitus, in pregnancy, third trimester
+O24019 |10|Pre-existing type 1 diabetes mellitus, in pregnancy, unspecified trimester
+O2402  |10|Pre-existing type 1 diabetes mellitus, in childbirth
+O2403  |10|Pre-existing type 1 diabetes mellitus, in the puerperium
+O241   |10|Pre-existing type 2 diabetes mellitus, in pregnancy, childbirth and the puerperium
+O2411  |10|Pre-existing type 2 diabetes mellitus, in pregnancy
+O24111 |10|Pre-existing type 2 diabetes mellitus, in pregnancy, first trimester
+O24112 |10|Pre-existing type 2 diabetes mellitus, in pregnancy, second trimester
+O24113 |10|Pre-existing type 2 diabetes mellitus, in pregnancy, third trimester
+O24119 |10|Pre-existing type 2 diabetes mellitus, in pregnancy, unspecified trimester
+O2412  |10|Pre-existing type 2 diabetes mellitus, in childbirth
+O2413  |10|Pre-existing type 2 diabetes mellitus, in the puerperium
+O243   |10|Unspecified pre-existing diabetes mellitus in pregnancy, childbirth and the puerperium
+O2431  |10|Unspecified pre-existing diabetes mellitus in pregnancy
+O24311 |10|Unspecified pre-existing diabetes mellitus in pregnancy, first trimester
+O24312 |10|Unspecified pre-existing diabetes mellitus in pregnancy, second trimester
+O24313 |10|Unspecified pre-existing diabetes mellitus in pregnancy, third trimester
+O24319 |10|Unspecified pre-existing diabetes mellitus in pregnancy, unspecified trimester
+O2432  |10|Unspecified pre-existing diabetes mellitus in childbirth
+O2433  |10|Unspecified pre-existing diabetes mellitus in the puerperium
+O244   |10|Gestational diabetes mellitus
+O2441  |10|Gestational diabetes mellitus in pregnancy
+O24410 |10|Gestational diabetes mellitus in pregnancy, diet controlled
+O24414 |10|Gestational diabetes mellitus in pregnancy, insulin controlled
+O24415 |10|Gestational diabetes mellitus in pregnancy, controlled by oral hypoglycemic drugs
+O24419 |10|Gestational diabetes mellitus in pregnancy, unspecified control
+O2442  |10|Gestational diabetes mellitus in childbirth
+O24420 |10|Gestational diabetes mellitus in childbirth, diet controlled
+O24424 |10|Gestational diabetes mellitus in childbirth, insulin controlled
+O24425 |10|Gestational diabetes mellitus in childbirth, controlled by oral hypoglycemic drugs
+O24429 |10|Gestational diabetes mellitus in childbirth, unspecified control
+O2443  |10|Gestational diabetes mellitus in the puerperium
+O24430 |10|Gestational diabetes mellitus in the puerperium, diet controlled
+O24434 |10|Gestational diabetes mellitus in the puerperium, insulin controlled
+O24435 |10|Gestational diabetes mellitus in puerperium, controlled by oral hypoglycemic drugs
+O24439 |10|Gestational diabetes mellitus in the puerperium, unspecified control
+O248   |10|Other pre-existing diabetes mellitus in pregnancy, childbirth, and the puerperium
+O2481  |10|Other pre-existing diabetes mellitus in pregnancy
+O24811 |10|Other pre-existing diabetes mellitus in pregnancy, first trimester
+O24812 |10|Other pre-existing diabetes mellitus in pregnancy, second trimester
+O24813 |10|Other pre-existing diabetes mellitus in pregnancy, third trimester
+O24819 |10|Other pre-existing diabetes mellitus in pregnancy, unspecified trimester
+O2482  |10|Other pre-existing diabetes mellitus in childbirth
+O2483  |10|Other pre-existing diabetes mellitus in the puerperium
+O249   |10|Unspecified diabetes mellitus in pregnancy, childbirth and the puerperium
+O2491  |10|Unspecified diabetes mellitus in pregnancy
+O24911 |10|Unspecified diabetes mellitus in pregnancy, first trimester
+O24912 |10|Unspecified diabetes mellitus in pregnancy, second trimester
+O24913 |10|Unspecified diabetes mellitus in pregnancy, third trimester
+O24919 |10|Unspecified diabetes mellitus in pregnancy, unspecified trimester
+O2492  |10|Unspecified diabetes mellitus in childbirth
+O2493  |10|Unspecified diabetes mellitus in the puerperium
+P700   |10|Syndrome of infant of mother with gestational diabetes
+P702   |10|Neonatal diabetes mellitus
+R7303  |10|Prediabetes
+Z131   |10|Encounter for screening for diabetes mellitus
+Z833   |10|Family history of diabetes mellitus
+Z8632  |10|Personal history of gestational diabetes
