@@ -10,6 +10,10 @@
     - [Background](#background)
   - [Dataset](#dataset)
     - [MIMIC-IV](#mimic-iv)
+    - [Data Structure](#data-structure)
+    - [Data Loading](#data-loading)
+      - [Data Format](#data-format)
+      - [Data Exploration](#data-exploration)
   - [Data Preprocessing](#data-preprocessing)
   - [Techniques / Evaluation](#techniques--evaluation)
     - [Logistic Regression](#logistic-regression)
@@ -37,6 +41,34 @@ MIMIC IV is the latest release of the dataset. To get access to the dataset, one
 **License (for files):** [PhysioNet Credentialed Health Data License 1.5.0](https://physionet.org/content/mimiciv/view-license/2.2/) \
 **Data Use Agreement:** [PhysioNet Credentialed Health Data Use Agreement 1.5.0](https://physionet.org/content/mimiciv/view-dua/2.2/) \
 **Required training:** [CITI Data or Specimens Only Research](https://physionet.org/content/mimiciv/view-required-training/2.2/#1)
+### Data Structure
+MIMIC-IV dataset comprises of different modules as described below: \
+**Hosp** module contains all data acquired from the hospital wide electronic health record. Information covered includes patient and admission information, laboratory measurements, microbiology, medication administration, and billed diagnoses. \
+**ICU** module contains information collected from the clinical information system used within the ICU and includes intravenous administrations, ventilator settings, and other charted items. \
+**ED** module contains data for emergency department patients and includes reason for admission, triage assessment, vital signs, and medicine reconciliaton. \
+**CXR** module contains patient chest x-rays and can linked with the clinical data from other modules. \
+**ECG** module contains waveform data, and lookup tables which can be used to link subjects to other modules. \ 
+**Note** module contains de-identified free-text clinical notes for patients.
+### Data Loading
+<pre>
+Database: PostgreSql
+</pre>
+#### Data Format
+The data is available to download as csv files for multiple relational databases. For the purpose of this study PostgreSql has been the chosen relational database engine. \
+Once the files are downloaded, I followed the steps described [here](https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iv/buildmimic/postgres/README.md) to load data into postgreSql instance.
+#### Data Exploration
+<pre>
+Database Schemas: mimiciv_derived, mimiciv_ed, mimiciv_hosp, mimiciv_icu, mimiciv_note
+</pre>
+<pre>
+Schemas related to study:<br/>mimiciv_hosp,<br/>mimiciv_note
+</pre>
+<pre>
+Tables related to study:<br/>mimiciv_hosp.d_icd_diagnoses,<br/>mimiciv_hosp.icd_diagnoses,<br/>mimiciv_note.discharge
+</pre>
+**mimiciv_hosp.d_icd_diagnoses** It is a dictionary table and contains all icd codes and their description. The dictionary contains both ICD9 and ICD10 codes. ICD9 is the older version and has been replaced by ICD10 almost a decade ago. Most EHR systems still has ICD9 to cater for historical data. For the purpose of this study we are only focus on ICD10. \
+**mimiciv_note.discharge** This table contains the discharge notes of patients for specific hospitalization. \
+**mimiciv_hosp.icd_diagnoses** This table contain all the diagnosed icd codes for patient tied to their visit / hospitalization.
 
 ## Data Preprocessing
 
