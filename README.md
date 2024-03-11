@@ -16,6 +16,7 @@
       - [Data Exploration](#data-exploration)
   - [Data Preprocessing](#data-preprocessing)
     - [Study Constraints](#study-constraints)
+    - [Project Schema](#project-schema)
   - [Techniques / Evaluation](#techniques--evaluation)
     - [Logistic Regression](#logistic-regression)
       - [Using Count Vectorization](#using-count-vectorization)
@@ -83,7 +84,15 @@ ICD Code Dictionary Stats:
 ### Study Constraints
 There are a total of ~110K ICD Codes (including ICD9), whereas ~95K of the total are ICD10 codes. \
 The ultimate goal is to predict any of the ICD10 code based on clinical documents but for this study we are going to limit prediction to a subset of codes and are going to limit the data to predict codes only related to Diabetes. \
-There are a total of 642 different ICD10 codes in the dictionary related to diabetes which can be categorized into 13 different categories: E08,E09,E10,E11,E13,E23,N25,O24,P70,R73,Z13,Z83,Z86
+There are a total of 642 different ICD10 codes in the dictionary related to diabetes which can be categorized into 13 different categories: E08, E09, E10, E11, E13, E23, N25, O24, P70, R73, Z13, Z83, Z86 \
+Example: \
+E08: Diabetes mellitus due to underlying condition \
+E080: Diabetes mellitus due to underlying condition with hyperosmolarity \
+E0801: Diabetes mellitus due to underlying condition with hyperosmolarity with coma \
+and so on...
+
+### Project Schema
+
 
 ## Techniques / Evaluation
 This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TV_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
