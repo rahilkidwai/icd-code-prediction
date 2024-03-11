@@ -15,6 +15,7 @@
       - [Data Format](#data-format)
       - [Data Exploration](#data-exploration)
   - [Data Preprocessing](#data-preprocessing)
+    - [Study Constraints](#study-constraints)
   - [Techniques / Evaluation](#techniques--evaluation)
     - [Logistic Regression](#logistic-regression)
       - [Using Count Vectorization](#using-count-vectorization)
@@ -54,7 +55,7 @@ MIMIC-IV dataset comprises of different modules as described below: \
 Database: PostgreSql
 </pre>
 #### Data Format
-The data is available to download as csv files for multiple relational databases. For the purpose of this study PostgreSql has been the chosen relational database engine. \
+The data is available to download as csv files for multiple relational databases. For the purpose of this study PostgreSql is the chosen relational database engine. \
 Once the files are downloaded, I followed the steps described [here](https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iv/buildmimic/postgres/README.md) to load data into postgreSql instance.
 #### Data Exploration
 <pre>
@@ -63,6 +64,7 @@ Database Schemas: mimiciv_derived, mimiciv_ed, mimiciv_hosp, mimiciv_icu, mimici
 <pre>
 Schemas related to study:<br/>mimiciv_hosp,<br/>mimiciv_note
 </pre>
+MIMIC-IV data is distributed across 5 different schemas. All the data needed for this study is confined in "hosp" and "note" schemas.
 <pre>
 Tables related to study:<br/>mimiciv_hosp.d_icd_diagnoses,<br/>mimiciv_hosp.icd_diagnoses,<br/>mimiciv_note.discharge
 </pre>
@@ -71,6 +73,16 @@ Tables related to study:<br/>mimiciv_hosp.d_icd_diagnoses,<br/>mimiciv_hosp.icd_
 **mimiciv_hosp.icd_diagnoses** This table contain all the diagnosed icd codes for patient tied to their visit / hospitalization.
 
 ## Data Preprocessing
+<pre>
+ICD Code Dictionary Stats: \
+
+|   |   |
+|---|---|
+| Total ICD Codes | 109775 |
+| Total ICD 10 Codes | 95109 |
+| Total ICD 10 Codes (Diabetes) | 642 |
+</pre>
+### Study Constraints
 
 ## Techniques / Evaluation
 This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TV_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
