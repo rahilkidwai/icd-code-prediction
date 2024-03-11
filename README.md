@@ -73,15 +73,13 @@ Tables related to study:<br/>mimiciv_hosp.d_icd_diagnoses,<br/>mimiciv_hosp.icd_
 **mimiciv_hosp.icd_diagnoses** This table contain all the diagnosed icd codes for patient tied to their visit / hospitalization.
 
 ## Data Preprocessing
-<pre>
-ICD Code Dictionary Stats: \
-
+ICD Code Dictionary Stats:
 |   |   |
 |---|---|
 | Total ICD Codes | 109775 |
 | Total ICD 10 Codes | 95109 |
 | Total ICD 10 Codes (Diabetes) | 642 |
-</pre>
+
 ### Study Constraints
 
 ## Techniques / Evaluation
