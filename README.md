@@ -93,6 +93,33 @@ and so on...
 
 ### Project Schema
 
+```
+select icd_code, icd_version, long_title 
+into capstone.d_icd_diagnoses
+from mimiciv_hosp.d_icd_diagnoses 
+where icd_version=10
+and long_title ilike '%diabetes%'
+```
+
+```
+select subject_id, hadm_id, seq_num, icd_code, icd_version 
+into capstone.diagnoses_icd
+from mimiciv_hosp.diagnoses_icd 
+where icd_version=10 
+and icd_code in (select icd_code from capstone.d_icd_diagnoses)
+order by subject_id, hadm_id, seq_num
+```
+
+```
+with diagnosis as (
+	select subject_id, hadm_id from capstone.diagnoses_icd group by subject_id, hadm_id having count(*) = 1
+)
+select D.subject_id, D.hadm_id, D.note_type, D.note_seq, D.text, null as icd_code
+into capstone.discharge_note
+from mimiciv_note.discharge D
+inner join diagnosis C on D.subject_id=C.subject_id and D.hadm_id=C.hadm_id 
+order by D.subject_id, D.hadm_id;
+```
 
 ## Techniques / Evaluation
 This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TV_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
