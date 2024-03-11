@@ -76,11 +76,14 @@ Tables related to study:<br/>mimiciv_hosp.d_icd_diagnoses,<br/>mimiciv_hosp.icd_
 ICD Code Dictionary Stats:
 |   |   |
 |---|---|
-| Total ICD Codes | 109775 |
-| Total ICD 10 Codes | 95109 |
+| Total ICD Codes | 109,775 |
+| Total ICD 10 Codes | 95,109 |
 | Total ICD 10 Codes (Diabetes) | 642 |
 
 ### Study Constraints
+There are a total of ~110K ICD Codes (including ICD9), whereas ~95K of the total are ICD10 codes. \
+The ultimate goal is to predict any of the ICD10 code based on clinical documents but for this study we are going to limit prediction to a subset of codes and are going to limit the data to predict codes only related to Diabetes. \
+There are a total of 642 different ICD10 codes in the dictionary related to diabetes which can be categorized into 13 different categories: E08,E09,E10,E11,E13,E23,N25,O24,P70,R73,Z13,Z83,Z86
 
 ## Techniques / Evaluation
 This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TV_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
