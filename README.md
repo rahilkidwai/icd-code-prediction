@@ -16,7 +16,7 @@
       - [Data Exploration](#data-exploration)
   - [Data Preprocessing](#data-preprocessing)
     - [Study Constraints](#study-constraints)
-    - [Project Schema](#project-schema)
+    - [New Schema](#new-schema)
   - [Techniques / Evaluation](#techniques--evaluation)
     - [Logistic Regression](#logistic-regression)
       - [Using Count Vectorization](#using-count-vectorization)
@@ -91,8 +91,10 @@ E080: Diabetes mellitus due to underlying condition with hyperosmolarity \
 E0801: Diabetes mellitus due to underlying condition with hyperosmolarity with coma \
 and so on...
 
-### Project Schema
+### New Schema
+Created a new schema to hold subset of data to be used for this study.
 
+- Query to get icd codes specific to diabetes.
 ```
 select icd_code, icd_version, long_title 
 into capstone.d_icd_diagnoses
@@ -101,6 +103,7 @@ where icd_version=10
 and long_title ilike '%diabetes%'
 ```
 
+- Query to get patients and admissions with one or more diabetes diagnosis 
 ```
 select subject_id, hadm_id, seq_num, icd_code, icd_version 
 into capstone.diagnoses_icd
@@ -109,7 +112,7 @@ where icd_version=10
 and icd_code in (select icd_code from capstone.d_icd_diagnoses)
 order by subject_id, hadm_id, seq_num
 ```
-
+- Query to get discharge notes for patients and admissions tied to a single diabetes diagnosis.
 ```
 with diagnosis as (
 	select subject_id, hadm_id from capstone.diagnoses_icd group by subject_id, hadm_id having count(*) = 1
