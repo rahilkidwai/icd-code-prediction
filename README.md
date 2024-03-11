@@ -18,6 +18,7 @@
     - [Study Constraints](#study-constraints)
     - [New Schema](#new-schema)
     - [DataFrame for Model Evaluation](#dataframe-for-model-evaluation)
+      - [DataCleaner utility](#datacleaner-utility)
   - [Techniques / Evaluation](#techniques--evaluation)
     - [Logistic Regression](#logistic-regression)
       - [Using Count Vectorization](#using-count-vectorization)
@@ -134,7 +135,16 @@ Stats on notes related to diabetes diagnosis:
 | Maximum note length | 53,456 chars |
 
 After filtering data for diabetes diagnosis, we are left with ~25K discharge notes. The smallest note was around 700 characters and the largest note was over 53K characters. \
-Each note is a free text note and the quality of data varies from one note to other.
+
+#### DataCleaner utility
+<pre>
+Language: C#, .NetCore
+</pre>
+
+Each note is a free text note and the quality of data varies from one note to other. Each note contains patient demographics, patient medications reconciliation, past medical history, family history, diagnosis, labs and other related details.
+A discharge note sample is available [here](\data\note_sample.txt) \
+The DataCleaner utility is written to extract relevant text for this study. It parses the text and returns lines related to patient history and diagnoses. \
+These lines are stored by the utility in the database and converted to csv format to be used as data source for our data frame and modeling. 
 
 
 ## Techniques / Evaluation
