@@ -252,6 +252,7 @@ To predict the code, we explored four different ML techniques:
 - Naive Bayes
 - Support Vector Machines
 - AdaBoost
+
 For comparision we used the following metrics:
 - Accuracy
 - F-score (macro / weighted)
