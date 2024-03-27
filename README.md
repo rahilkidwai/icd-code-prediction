@@ -23,8 +23,6 @@
   - [Techniques / Evaluation](#techniques--evaluation)
     - [Text Vectorization](#text-vectorization)
     - [1. Logistic Regression](#1-logistic-regression)
-      - [Using Count Vectorization](#using-count-vectorization)
-      - [Using TFIDF](#using-tfidf)
     - [2. Naive Bayes](#2-naive-bayes)
     - [3. Support Vector Machines](#3-support-vector-machines)
     - [4. AdaBoost Ensemble](#4-adaboost-ensemble)
@@ -137,7 +135,7 @@ Stats on notes related to diabetes diagnosis:
 | Minimum note length | 697 chars |
 | Maximum note length | 53,456 chars |
 
-After filtering data for diabetes diagnosis, we are left with ~25K discharge notes. The smallest note was around 700 characters and the largest note was over 53K characters. \
+After filtering data for diabetes diagnosis, we are left with ~25K discharge notes. The smallest note was around 700 characters and the largest note was over 53K characters.
 
 #### DataCleaner utility
 <pre>
@@ -193,23 +191,18 @@ To convert text data to vectors, I leveraged following vectorizers from scikit-l
 
 ### 1. Logistic Regression
 
-#### Using Count Vectorization
-| Estimator | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
+| Vectorizer / Multi Class | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
 | --------- | -------- | -------- | ---------------- | ------------------- |
-| One-vs-Rest Classifier | 3.92s | 0.8395 |	0.7056 | 0.7965 |
-| Multinomial Classifier | 3.08s |	0.8395 | 0.7056 | 0.7965 |
-| One-vs-One Classifier | 17.11s | 0.8519 | 0.7395 | 0.8225 |
+| Count Vectorizer / One-vs-Rest | 3.92s | 0.8395 |	0.7056 | 0.7965 |
+| Count Vectorizer / Multinomial | 3.08s |	0.8395 | 0.7056 | 0.7965 |
+| Count Vectorizer / One-vs-One | 17.11s | 0.8519 | 0.7395 | 0.8225 |
+| TFIDF Vectorizer / One-vs-Rest | 2.96s | 0.7778 | 0.6357 | 0.7339 |
+| TFIDF Vectorizer / Multinomial | 2.25s | 0.7901 | 0.6573 | 0.7501 |
+| TFIDF Vectorizer / One-vs-One | 12.85s | 0.6790 | 0.5060 | 0.6267 |
 
-**Best Performance**: One-vs-One
-
-#### Using TFIDF
-| Estimator | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
-| --------- | -------- | -------- | ---------------- | ------------------- |
-| One-vs-Rest Classifier | 2.96s | 0.7778 | 0.6357 | 0.7339 |
-| Multinomial Classifier | 2.25s | 0.7901 | 0.6573 | 0.7501 |
-| One-vs-One Classifier | 12.85s | 0.6790 | 0.5060 | 0.6267 |
-
-**Best Performance**: Multinomial
+**Best Performance**:
+Logistic Regression (OVO) with Count Vectorizer
+Logistic Regression (multi) with TFIDF Vectorizer
 
 ### 2. Naive Bayes
 | Vectorizer | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
@@ -217,7 +210,8 @@ To convert text data to vectors, I leveraged following vectorizers from scikit-l
 | Count Vectorizer | 0.48s | 0.7778 | 0.6713 | 0.7479 |
 | TFIDF Vectorizer | 0.58s | 0.6543 | 0.4809 | 0.6031 |
 
-**Best Performance**: Count Vectorizer
+**Best Performance**: 
+Naive Bayes with Count Vectorizer
 
 ### 3. Support Vector Machines
 | Vectorizer / Kernel | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
@@ -227,17 +221,19 @@ To convert text data to vectors, I leveraged following vectorizers from scikit-l
 | TFIDF Vectorizer / RBF | 1.28s | 0.1975 | 0.0300 | 0.0652 |
 | TFIDF Vectorizer / Poly | 1.39s | 0.7160 | 0.5839 | 0.6786 |
 
-**Best Performance**: TFIDF Vectorizer / Poly
+**Best Performance**: 
+SVM with TFIDF Vectorizer and 'Poly' kernel
 
 ### 4. AdaBoost Ensemble
-| Estimator | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
+| Vectorizer / Multi Class | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
 | --------- | -------- | -------- | ---------------- | ------------------- |
 | Count Vectorizer / OVR | 468.94s | 0.8025 | 0.6602 | 0.7642 |
 | TFIDF Vectorizer / Multinomial | 402.24s | 0.7654 | 0.6591 | 0.7392 |
 | TFIDF Vectorizer / OVR | 264.45s | 0.8025 | 0.6602 | 0.7642 |
 | Count Vectorizer / Multinomial | 211.76s | 0.7654 | 0.6560 | 0.7413 |
 
-**Best Performance**: Count Vectorizer / OVR
+**Best Performance**:
+AdaBoost using Logistic Regression estimator (OVR) with Count Vectorizer
 
 ## Future Work
 Also would like to explore the natural language processing (NLP) technique (word embedding, Word2Vector) for processing data and a deep learning-based Convolutional Neural Network (CNN) model.
