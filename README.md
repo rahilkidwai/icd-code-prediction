@@ -32,16 +32,23 @@
 
 ## Problem Statement
 Automate and recommend diagnosis and procedure codes based on discharge summaries and clinical notes in healthcare domain.
-### Background
+
+### Introduction
 The International Classification of Diseases (ICD) code is a diagnostic classification standard that is frequently used as a referencing system in healthcare and insurance. \
 ICD-10 (International Classification of Diseases, 10th Revision) is a set of codes used to classify diseases, injuries, health encounters, and inpatient procedures published by the World Health Organization (WHO). ICD essentially categorizes diseases and has given each illness a unique code. The ICD-10 version of codes contains more than 70,000 codes. \
 
-However, it takes time and effort to find and use the right diagnosis code based on a patient’s medical records. Thousands of medical coders do the classification manually by reading patient health records, physician notes and discharge summaries. The complex structure and amount of information makes manual coding challenging, is time consuming and error prone. Billing issues and underpayments can result from coding errors and missing codes. In the last few years lot of efforts have been made to automate this process by leveraging AI and ML. Several methods have been developed to assist in the ICD coding process by predicting ICD codes utilizing clinical notes from medical records. 
-## Business Value
+ICD codes have been broadly adopted by healthcare providers for healthcare claims reimbursement and billing. Thousands of medical coders do the assginment (classification) manually by reading patient health records, physician notes and discharge summaries and extractng key information to determine and assign correct codes. The complex structure and amount of information in Electronic Medicial Record (EMR) systems significantly increase the difficulty of manual coding which is also time consuming and error prone. Billing issues and underpayments can result from coding errors and missing codes.
+
+Automation of coding have become popular in recent years because of the large scale adoption of machine learing and developments in artificial intelligence like deep learning via neural networks and natural language processing (NLP) models. 
+
+Any reduction in the laborious task of manual coding could assist physicians in making a better diagnosis, and reduce billing and claim errors. Also prediction can help in the completeness (predict missing diagnosis from EHR) of diagnosis.
 
 ## Dataset
+Electronic Medical Record system (EMR) is a great source of text data as it includes clinical notes, discharge notes, assessments, current medications, and ICD-10 codes.
+
 MIMIC (Medical Information Mart for Intensive Care) [[1]](#1) [[2]](#2) [[3]](#3) is a large, freely-available database comprising de-identified health-related data associated with over forty thousand patients who stayed in critical care units of the Beth Israel Deaconess Medical Center between 2001 and 2012. \
 The database includes information such as demographics, vital sign measurements, laboratory test results, procedures, medications, caregiver notes, imaging reports.
+
 ### MIMIC-IV
 MIMIC IV is the latest release of the dataset. To get access to the dataset, one has to agree to the Data Use Agreement and complete the required training. \
 [MIMIC-IV Version 2.2](https://physionet.org/content/mimiciv/2.2/) has been used for this project. \
@@ -184,7 +191,8 @@ This is a Multi Label Classification problem. I explored following Machine Learn
 - Logistic Regression, 
 - Naive Bayes,
 - State Vector Machines (SVM) 
-- AdaBoost Ensemble
+- AdaBoost Ensemble \
+
 To compare different techniques I use the following metrics: Accuracy, and F-score (Macro and Weighted).
 
 ### Text Vectorization
@@ -218,7 +226,7 @@ Naive Bayes with Count Vectorizer
 
 ### 3. Support Vector Machines
 | Vectorizer / Kernel | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
-| --------- | -------- | -------- | ---------------- | ------------------- |
+| --------- | ------- | -------- | ---------------- | ------------------- |
 | Count Vectorizer / RBF | 1.15s | 0.1975 | 0.0300 | 0.0652 |
 | Count Vectorizer / Poly | 1.24s | 0.5556 | 0.4647 | 0.5066 |
 | TFIDF Vectorizer / RBF | 1.28s | 0.1975 | 0.0300 | 0.0652 |
@@ -238,11 +246,49 @@ SVM with TFIDF Vectorizer and 'Poly' kernel
 **Best Performance**:
 AdaBoost using Logistic Regression estimator (OVR) with Count Vectorizer
 
+## Conclusion
+To predict the code, we explored four different ML techniques:
+- Logistic Regression
+- Naive Bayes
+- Support Vector Machines
+- AdaBoost
+For comparision we used the following metrics:
+- Accuracy
+- F-score (macro / weighted)
+And looked at average fit time to compare performance.
+
+Here are the ranges of values:
+| Parameter | Range |
+| --------- | ----- |
+| Accuracy | 0.1975 - 0.8519 |
+| F-score (macro) | 0.0300 - 0.7395 |
+| F-score (weighted) | 0.5066 - 0.8225 |
+| Fit time (seconds) | 0.48s - 468.94s |
+
+**Overall Best Performance**:
+| Parameter | Best Model | Vectorization |
+| --------- | ---------- | ------------- |
+| Accuracy | Logistic Regression (class = ovo) | Count Vectorizer |
+| F-score (macro) | Logistic Regression (class = ovo) | Count Vectorizer |
+| F-score (weighted) | Logistic Regression (class = ovo) | Count Vectorizer |
+| Fit time (seconds) | Naive Bayes | Count Vectorizer | 
+
+**Overall Worst Performance**:
+| Parameter | Best Model | Vectorization |
+| --------- | ---------- | ------------- |
+| Accuracy | SVM (kernel = rbf) | Count Vectorizer & TF-IDF |
+| F-score (macro) | SVM (kernel = rbf) | Count Vectorizer & TF-IDF |
+| F-score (weighted) | SVM (kernel = poly) | Count Vectorizer |
+| Fit time (seconds) | AdaBoost (class = ovr) | Count Vectorizer |
+
 ## Future Work
-Also would like to explore the natural language processing (NLP) technique (word embedding, Word2Vector) for processing data and a deep learning-based Convolutional Neural Network (CNN) model.
+While machine learning algorithms documented here and other available algorithms can achieve this task of multi-classification with a certain degree of accuracy but Deep Learning models have shown promising outcomes in text classification and are able to achieve accuracy score of beyond 90%. Exploring Convolutional Neural Networks (CNNs) with NLP techniques (Word embedding, Word2Vector) to tackle this problem will be a possible next step. A good CNN model can significantly improved the prediction performance for code prediction system based.
+
+Retrieval-Augmented Generation (RAG) is a natural language processing (NLP) technique that combines generative and retrieval-based AI models to improve the accuracy and reliability of generative AI models. Exploring use of a Large Language Model (LLM) like Llama with RAG [[5]](#5) might offer the best solution.
 
 ## References
 <a id="1">[1]</a> Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2023). MIMIC-IV (version 2.2). PhysioNet. https://doi.org/10.13026/6mm1-ek67. \
 <a id="2">[2]</a> Johnson, A.E.W., Bulgarelli, L., Shen, L. et al. MIMIC-IV, a freely accessible electronic health record dataset. Sci Data 10, 1 (2023). https://doi.org/10.1038/s41597-022-01899-x \
 <a id="3">[3]</a> Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. \
-<a id="4">[4]</a> Masud JHB, Kuo CC, Yeh CY, Yang HC, Lin MC. Applying Deep Learning Model to Predict Diagnosis Code of Medical Records. Diagnostics (Basel). 2023 Jul 6;13(13):2297. doi: 10.3390/diagnostics13132297. PMID: 37443689; PMCID: PMC10340491.
+<a id="4">[4]</a> Masud JHB, Kuo CC, Yeh CY, Yang HC, Lin MC. Applying Deep Learning Model to Predict Diagnosis Code of Medical Records. Diagnostics (Basel). 2023 Jul 6;13(13):2297. doi: 10.3390/diagnostics13132297. PMID: 37443689; PMCID: PMC10340491. \
+<a id="5">[5]</a> https://github.com/run-llama/rags
