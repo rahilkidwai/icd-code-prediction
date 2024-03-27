@@ -258,7 +258,7 @@ For comparision we used the following metrics:
 - F-score (macro / weighted)
 And looked at average fit time to compare performance.
 
-Here are the ranges of values:
+Here are the ranges of values for all parameters based on our evaluation:
 | Parameter | Range |
 | --------- | ----- |
 | Accuracy | 0.1975 - 0.8519 |
@@ -267,7 +267,7 @@ Here are the ranges of values:
 | Fit time (seconds) | 0.48s - 468.94s |
 
 **Overall Best Performance**:
-| Parameter | Best Model | Vectorization |
+| Parameter | Best Model | Vectorizer |
 | --------- | ---------- | ------------- |
 | Accuracy | Logistic Regression (class = ovo) | Count Vectorizer |
 | F-score (macro) | Logistic Regression (class = ovo) | Count Vectorizer |
@@ -275,7 +275,7 @@ Here are the ranges of values:
 | Fit time (seconds) | Naive Bayes | Count Vectorizer | 
 
 **Overall Worst Performance**:
-| Parameter | Best Model | Vectorization |
+| Parameter | Worst Model | Vectorizer |
 | --------- | ---------- | ------------- |
 | Accuracy | SVM (kernel = rbf) | Count Vectorizer & TF-IDF |
 | F-score (macro) | SVM (kernel = rbf) | Count Vectorizer & TF-IDF |
