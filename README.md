@@ -194,34 +194,50 @@ To convert text data to vectors, I leveraged following vectorizers from scikit-l
 ### 1. Logistic Regression
 
 #### Using Count Vectorization
-| Esitmator | Accuracy |
-| --------- | -------- |
-| One-vs-Rest Classifier | 0.71 |
-| Multinomial Classifier | 0.76 |
-| One-vs-One Classifier | 0.68 |
+| Estimator | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
+| --------- | -------- | -------- | ---------------- | ------------------- |
+| One-vs-Rest Classifier | 3.92s | 0.8395 |	0.7056 | 0.7965 |
+| Multinomial Classifier | 3.08s |	0.8395 | 0.7056 | 0.7965 |
+| One-vs-One Classifier | 17.11s | 0.8519 | 0.7395 | 0.8225 |
+
+**Best Performance**: One-vs-One
+
+#### Using TFIDF
+| Estimator | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
+| --------- | -------- | -------- | ---------------- | ------------------- |
+| One-vs-Rest Classifier | 2.96s | 0.7778 | 0.6357 | 0.7339 |
+| Multinomial Classifier | 2.25s | 0.7901 | 0.6573 | 0.7501 |
+| One-vs-One Classifier | 12.85s | 0.6790 | 0.5060 | 0.6267 |
 
 **Best Performance**: Multinomial
 
-#### Using TFIDF
-| Esitmator | Accuracy |
-| --------- | -------- |
-| One-vs-Rest Classifier | 0.63 |
-| Multinomial Classifier | 0.63 |
-| One-vs-One Classifier | 0.55 |
-
-**Best Performance**: One-vs-Rest
-
 ### 2. Naive Bayes
-| Esitmator | Accuracy |
-| --------- | -------- |
-| Count Vectorizer | 0.60 |
-| MultinomialNB | 0.55 |
+| Vectorizer | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
+| --------- | -------- | -------- | ---------------- | ------------------- |
+| Count Vectorizer | 0.48s | 0.7778 | 0.6713 | 0.7479 |
+| TFIDF Vectorizer | 0.58s | 0.6543 | 0.4809 | 0.6031 |
 
 **Best Performance**: Count Vectorizer
 
 ### 3. Support Vector Machines
+| Vectorizer / Kernel | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
+| --------- | -------- | -------- | ---------------- | ------------------- |
+| Count Vectorizer / RBF | 1.15s | 0.1975 | 0.0300 | 0.0652 |
+| Count Vectorizer / Poly | 1.24s | 0.5556 | 0.4647 | 0.5066 |
+| TFIDF Vectorizer / RBF | 1.28s | 0.1975 | 0.0300 | 0.0652 |
+| TFIDF Vectorizer / Poly | 1.39s | 0.7160 | 0.5839 | 0.6786 |
+
+**Best Performance**: TFIDF Vectorizer / Poly
 
 ### 4. AdaBoost Ensemble
+| Estimator | Fit Time | Accuracy | F1-Score (macro) | F1-Score (weighted) |
+| --------- | -------- | -------- | ---------------- | ------------------- |
+| Count Vectorizer / OVR | 468.94s | 0.8025 | 0.6602 | 0.7642 |
+| TFIDF Vectorizer / Multinomial | 402.24s | 0.7654 | 0.6591 | 0.7392 |
+| TFIDF Vectorizer / OVR | 264.45s | 0.8025 | 0.6602 | 0.7642 |
+| Count Vectorizer / Multinomial | 211.76s | 0.7654 | 0.6560 | 0.7413 |
+
+**Best Performance**: Count Vectorizer / OVR
 
 ## Future Work
 Also would like to explore the natural language processing (NLP) technique (word embedding, Word2Vector) for processing data and a deep learning-based Convolutional Neural Network (CNN) model.
