@@ -20,13 +20,15 @@
     - [DataFrame for Model Evaluation](#dataframe-for-model-evaluation)
       - [DataCleaner utility](#datacleaner-utility)
       - [Final Dataset](#final-dataset)
-  - [Techniques / Evaluation (WORK IN PROGRESS)](#techniques--evaluation-work-in-progress)
-    - [Logistic Regression](#logistic-regression)
+  - [Techniques / Evaluation](#techniques--evaluation)
+    - [Text Vectorization](#text-vectorization)
+    - [1. Logistic Regression](#1-logistic-regression)
       - [Using Count Vectorization](#using-count-vectorization)
       - [Using TFIDF](#using-tfidf)
-    - [Naive Bayes](#naive-bayes)
-    - [Support Vector Machines](#support-vector-machines)
-  - [Conclusion](#conclusion)
+    - [2. Naive Bayes](#2-naive-bayes)
+    - [3. Support Vector Machines](#3-support-vector-machines)
+    - [4. AdaBoost Ensemble](#4-adaboost-ensemble)
+  - [Future Work](#future-work)
   - [References](#references)
 
 ## Problem Statement
@@ -50,7 +52,7 @@ MIMIC IV is the latest release of the dataset. To get access to the dataset, one
 MIMIC-IV dataset comprises of different modules as described below: \
 **Hosp** module contains all data acquired from the hospital wide electronic health record. Information covered includes patient and admission information, laboratory measurements, microbiology, medication administration, and billed diagnoses. \
 **ICU** module contains information collected from the clinical information system used within the ICU and includes intravenous administrations, ventilator settings, and other charted items. \
-**ED** module contains data for emergency department patients and includes reason for admission, triage assessment, vital signs, and medicine reconciliaton. \
+**ED** module contains data for emergency department patients and includes reason for admission, triage assessment, vital signs, and medicine reconciliation. \
 **CXR** module contains patient chest x-rays and can linked with the clinical data from other modules. \
 **ECG** module contains waveform data, and lookup tables which can be used to link subjects to other modules. \ 
 **Note** module contains de-identified free-text clinical notes for patients.
@@ -169,22 +171,33 @@ Structure of discharge_note_lines.csv
 | icd_code | The possible icd code to be predicted |
 | valid | True value indicates that this entry has been manually inspected and is correct |
 
-## Techniques / Evaluation (WORK IN PROGRESS)
-This is a Multi Label Classification problem. I plan to explore various techniques including traditional Machine Learning models like Logistic Regression, State Vector Machines (SVM), TF_IDF, Naive Bayes, K-Nearest Neighbors (KNN).
-Also would like to explore the natural language processing (NLP) technique (word embedding, Word2Vector) for processing data and a deep learning-based Convolutional Neural Network (CNN) model.
-To compare different techniques I plan to use the following metrics: Precision, Recall, and F-score.
-### Logistic Regression
+## Techniques / Evaluation
+Following technology stack is leveraged for this project:
 <pre>
-Language: Python
-Packages: Pandas, nltk, sklearn, matplotlib, seaborn
+Languages: Python, C#
+Python Packages: Pandas, nltk, sklearn, matplotlib, seaborn
 Notebook: [lr-comp-analysis](lr-comp-analysis.ipynb)
 </pre>
+
+This is a Multi Label Classification problem. I explored following Machine Learning techniques / models:
+- Logistic Regression, 
+- Naive Bayes,
+- State Vector Machines (SVM) 
+- AdaBoost Ensemble
+To compare different techniques I use the following metrics: Accuracy, and F-score (Macro and Weighted).
+
+### Text Vectorization
+To convert text data to vectors, I leveraged following vectorizers from scikit-learn library. 
+- CountVectorizer and 
+- TF-IDF
+
+### 1. Logistic Regression
 
 #### Using Count Vectorization
 | Esitmator | Accuracy |
 | --------- | -------- |
 | One-vs-Rest Classifier | 0.71 |
-| Multnomial Classifier | 0.76 |
+| Multinomial Classifier | 0.76 |
 | One-vs-One Classifier | 0.68 |
 
 **Best Performance**: Multinomial
@@ -193,24 +206,27 @@ Notebook: [lr-comp-analysis](lr-comp-analysis.ipynb)
 | Esitmator | Accuracy |
 | --------- | -------- |
 | One-vs-Rest Classifier | 0.63 |
-| Multnomial Classifier | 0.63 |
+| Multinomial Classifier | 0.63 |
 | One-vs-One Classifier | 0.55 |
 
 **Best Performance**: One-vs-Rest
 
-### Naive Bayes
+### 2. Naive Bayes
 | Esitmator | Accuracy |
 | --------- | -------- |
 | Count Vectorizer | 0.60 |
-| MultnomialNB | 0.55 |
+| MultinomialNB | 0.55 |
 
 **Best Performance**: Count Vectorizer
 
-### Support Vector Machines
+### 3. Support Vector Machines
 
-## Conclusion
+### 4. AdaBoost Ensemble
+
+## Future Work
+Also would like to explore the natural language processing (NLP) technique (word embedding, Word2Vector) for processing data and a deep learning-based Convolutional Neural Network (CNN) model.
 
 ## References
 <a id="1">[1]</a> Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2023). MIMIC-IV (version 2.2). PhysioNet. https://doi.org/10.13026/6mm1-ek67. \
 <a id="2">[2]</a> Johnson, A.E.W., Bulgarelli, L., Shen, L. et al. MIMIC-IV, a freely accessible electronic health record dataset. Sci Data 10, 1 (2023). https://doi.org/10.1038/s41597-022-01899-x \
-<a id="3">[3]</a> Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. \
+<a id="3">[3]</a> Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
